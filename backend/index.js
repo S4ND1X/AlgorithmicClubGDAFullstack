@@ -20,6 +20,7 @@ app.get("/api", (req, res) => {
 
 //Enable cors and allow only one origin
 app.use(cors({ origin: process.env.ORIGIN_1 }));
+
 //Enable express
 app.use(express.json({ extended: true }));
 
