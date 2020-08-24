@@ -41,7 +41,7 @@ If you follow all the instructions you should be all set up.
 Each document contains its own doctype.
 
 ## Next features
-This Web App is still in development, maybe for the next 3 months. The future features are the following:
+This Web App is still in development, maybe for the next 3 months. So the future implementations are the following:
 
  - Eventbrite API for fetching workshops data and so we can turn Eventbrite the central dashboard
  - Youtube API for fetching data from this [channel](https://www.youtube.com/channel/UCD_B4-slyYz-qYK7BI6R4oA) in order to display workshops recorded sessions inside the page.
