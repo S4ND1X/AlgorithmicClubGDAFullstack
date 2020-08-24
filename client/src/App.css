@@ -1,0 +1,14 @@
+.bootcamp-section {
+  background-image: linear-gradient(
+    -45deg,
+    var(--header-blue),
+    var(--header-turquoise)
+  );
+  padding: 1em 0 5em 0;
+}
+.bootcamp-section .section-title::after {
+  background-color: black;
+  width: 20%;
+  left: 40%;
+  right: 40%;
+}
