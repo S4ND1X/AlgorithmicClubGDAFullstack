@@ -2,7 +2,7 @@
 const workshopsModel = require("../models/workshopsModel");
 
 //Get all workshops on DB with equal model
-exports.getCurrentWorkshops = async (req, res) => {
+exports.getCurrentWorkshops = (req, res) => {
   workshopsModel
     .find()
     .then((data) => {
@@ -14,11 +14,11 @@ exports.getCurrentWorkshops = async (req, res) => {
 };
 
 //Get past workshops from current date
-exports.getPastWorkshops = async (req, res) => {
+exports.getPastWorkshops = (req, res) => {
   //Get current date, then conver it to ISO and based on that create new date
   let current = new Date();
   let inputDate = new Date(current.toISOString());
-  
+
   //Using $lte means Less Than or Equal, more info on mongoDoc
   workshopsModel
     .find({
@@ -33,11 +33,11 @@ exports.getPastWorkshops = async (req, res) => {
 };
 
 //Get upcoming workshops from current date
-exports.getUpcomingWorkshops = async (req, res) => {
+exports.getUpcomingWorkshops = (req, res) => {
   //Same method as above
   let current = new Date();
   let inputDate = new Date(current.toISOString());
-  
+
   //Using $gte means Greater Than or Equal, more info on mongoDoc
   workshopsModel
     .find({
@@ -50,5 +50,6 @@ exports.getUpcomingWorkshops = async (req, res) => {
       console.log(err);
     });
 };
+
 
 
